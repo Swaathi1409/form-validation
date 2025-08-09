@@ -1,0 +1,67 @@
+<!-- 
+    Event Organization Form
+    This HTML page provides a registration form for community events 
+    with validation and success message handling via external JS and CSS.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Organization Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Community Event Registration</h1>
+
+            <!-- Registration form -->
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="fullName">Name *</label>
+                    <input type="text" name="fullName" id="fullName" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" name="email" id="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact *</label>
+                    <input type="tel" name="phone" id="phone" required>
+                    <span class="error" id="phoneError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Age *</label>
+                    <input type="number" name="age" id="age" required min="18">
+                    <span class="error" id="ageError"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="event">Event *</label>
+                    <select id="event" name="event" required>
+                        <option value="">Choose an option</option>
+                        <option value="webinar">Webinar</option>
+                        <option value="seminar">Seminar</option>
+                        <option value="conference">Conference</option>
+                        <option value="workshop">Workshop</option>
+                    </select>
+                    <span id="eventError" class="error"></span>
+                </div>
+                <button id="submitBtn" type="submit">Submit</button>
+            </form>
+
+            <!-- Success message -->
+            <div id="success-message" class="success-message" style="display: none;">
+                <h3>Registration Successful! 🎉</h3>
+                <p>Thank you for registering. We'll send you event details soon.</p>
+            </div>
+        </div>
+
+        <!-- External JavaScript -->
+        <script src="script.js"></script>
+    </body>
+</html>
