@@ -52,6 +52,3 @@ A simple and responsive web form for community event registration with client-si
 
 ![WhatsApp Image 2025-08-07 at 20 34 40_a4f8d8e2](https://github.com/user-attachments/assets/cac8c369-a329-44e1-80c4-b0b97ac49326)
 
-
-## License
-This project is open source and available under the [MIT License](LICENSE).
